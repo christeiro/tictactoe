@@ -32,7 +32,7 @@ class Board
   end
 
   def draw
-    #system "clear"
+    system "clear"
     puts " #{@board[1].value} | #{@board[2].value} | #{@board[3].value} " 
     puts "---+---+---"
     puts " #{@board[4].value} | #{@board[5].value} | #{@board[6].value} "
