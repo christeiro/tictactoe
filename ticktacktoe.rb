@@ -56,7 +56,7 @@ def player_picks_square(board)
 end
 
 def computer_picks_square(board)
-  position = nil;
+  position = nil
   WINNING_LINES.each do |line|
     possible_winning_lines = Hash[ line.collect { |v| [v, board[v]] }]
     next_move = two_in_a_row(possible_winning_lines,'X')
@@ -81,7 +81,7 @@ end
 # checks to see if two in a row
 def two_in_a_row(hsh, mrkr)
   if hsh.values.count(mrkr) == 2
-    hsh.select{|k,v| v == ' '}.keys.first
+    hsh.select{|_k,v| v == ' '}.keys.first
   else
     false
   end
